@@ -1,0 +1,92 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<footer>
+  <div class="footer__content container">
+    <a class="footer__logo" href="/">
+      <img src="/footer/logo.svg" alt="image of logo of verbiq" />
+      <p>VerbiQ</p>
+    </a>
+    <div class="footer__social_media">
+      <button class="button button--secondary-sm"
+        ><Icon name="mage:playstore" />Play Store</button
+      >
+    </div>
+    <ul class="footer__menu">
+      <li><a href="/terminos-condiciones">Terminos y condiciones</a></li>
+      <li><a href="/politicas-privacidad">Politicas de privacidad</a></li>
+    </ul>
+    <p class="footer_year">@2024</p>
+  </div>
+</footer>
+<style>
+  footer {
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    margin-top: 2rem;
+    font-size: var(--text-sm);
+  }
+
+  footer .footer__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer__content .footer__logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+    cursor: pointer;
+  }
+
+  .footer__logo p {
+    font-size: var(--text-2xl);
+    font-family: "Roboto Serif", serif;
+    font-weight: var(--semibold);
+  }
+
+  .footer__logo img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  .footer__content .footer__social_media {
+    display: flex;
+    justify-content: end;
+  }
+
+  .footer__content .footer__menu {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--gray-500);
+    border-bottom: 1px solid var(--gray-500);
+    padding: 2.5rem 0.5rem;
+  }
+
+  .footer__content .footer__menu li {
+    cursor: pointer;
+  }
+
+  .footer__content .footer_year {
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (width < 550px) {
+    footer .footer__content {
+      gap: 1.5rem;
+    }
+    .footer__content .footer__logo {
+      justify-content: center;
+    }
+    .footer__content .footer__social_media {
+      justify-content: center;
+    }
+  }
+</style>

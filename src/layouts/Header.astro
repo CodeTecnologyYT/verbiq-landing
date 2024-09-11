@@ -1,0 +1,39 @@
+---
+
+---
+
+<header>
+  <div class="header__container container">
+    <a class="header-container__left" href="/">
+      <img src="/header/logo.png" alt="image of logo of verbiq" />
+      <p>VerbiQ</p>
+    </a>
+    <nav class="header-container__right">
+      <button class="button button--primary">Descargar</button>
+    </nav>
+  </div>
+</header>
+<style>
+  header {
+    border-bottom: 1px solid var(--gray-500);
+  }
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-container__left {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: space-between;
+    font-size: var(--text-lg);
+    font-family: "Roboto Serif", serif;
+    font-weight: var(--semibold);
+    cursor: pointer;
+  }
+  .header-container__left img {
+    width: 20px;
+    height: 20px;
+  }
+</style>
