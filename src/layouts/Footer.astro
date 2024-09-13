@@ -5,7 +5,10 @@ import { Icon } from "astro-icon/components";
 <footer>
   <div class="footer__content container">
     <a class="footer__logo" href="/">
-      <img src="/footer/logo.svg" alt="image of logo of verbiq" />
+      <img
+        src={`${import.meta.env.BASE_URL}/footer/logo.svg`}
+        alt="image of logo of verbiq"
+      />
       <p>VerbiQ</p>
     </a>
     <div class="footer__social_media">

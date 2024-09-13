@@ -5,7 +5,10 @@
 <header>
   <div class="header__container container">
     <a class="header-container__left" href="/">
-      <img src="/header/logo.png" alt="image of logo of verbiq" />
+      <img
+        src={`${import.meta.env.BASE_URL}/header/logo.png`}
+        alt="image of logo of verbiq"
+      />
       <p>VerbiQ</p>
     </a>
     <nav class="header-container__right">
